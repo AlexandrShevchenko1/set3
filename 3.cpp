@@ -1,6 +1,6 @@
 #include "3.h"
 
-// ------------------------- Quick Sort -----------------------------------------
+// Quick Sort
 
 int EnhancedStringSorter::quickSortStrings(std::vector<std::string>& data) {
     comparisonCount = 0;
@@ -46,7 +46,7 @@ std::vector<int> EnhancedStringSorter::refinePartition(std::vector<std::string>&
     return {index, low, high};
 }
 
-// ------------------------- Merge Sort -----------------------------------------
+//  Merge Sort
 
 int EnhancedStringSorter::mergeSortStrings(std::vector<std::string>& data) {
     comparisonCount = 0;
@@ -111,7 +111,7 @@ std::pair<int, int> EnhancedStringSorter::compareWithLCP(const std::string& s1, 
     return s1.length() == s2.length() ? std::make_pair(0, i) : (s1.length() < s2.length() ? std::make_pair(-1, i) : std::make_pair(1, i));
 }
 
-// ------------------------- Radix Sort -----------------------------------------
+// Radix Sort
 
 
 const int RADIX = 256;

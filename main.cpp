@@ -4,14 +4,10 @@
 #include <functional>
 #include <random>
 #include <chrono>
-#include <fstream>
 #include "2.h"
 #include "3.h"
 #include "StringGenerator.h"
 
-const std::string RANDOM_STRINGS_NAME = "Random strings";
-const std::string NEARLY_SORTED_STRINGS_NAME = "Nearly sorted strings";
-const std::string REVERSE_SORTED_STRINGS_NAME = "Reverse sorted strings";
 
 std::vector<std::string> getSubarray(const std::vector<std::string>& arr, size_t subarr_size) {
     if (subarr_size > arr.size()) {
